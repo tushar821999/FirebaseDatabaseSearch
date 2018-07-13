@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.androidgits.firebasedatabasesearch.MainActivity">
+
+
+    <TextView
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="24dp"
+        android:text="Firebase Database Search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView2"
+        tools:text="Firebase Database Search" />
+
+    <EditText
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/search_outline"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Search Here"
+        android:ems="10"
+        android:textSize="16sp"
+        android:textColor="#999"
+        android:layout_marginTop="46dp"
+        android:id="@+id/search_field"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignBottom="@+id/search_field"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/result_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_field"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>
+
